@@ -1,4 +1,8 @@
-;;
+;;; init.el --- summary
+;;; Commentary:
+;;; update:2018/06/12
+
+;;; Code:
 ;; el-get setting
 (when load-file-name
   (setq user-emacs-directory (file-name-directory load-file-name)))
@@ -34,7 +38,7 @@
 
 ;;;; coding
 
-;; cc-mode 
+;; cc-mode
 (load "~/.emacs.d/cc-mode")
 
 ;; yasnippet
@@ -42,3 +46,9 @@
 
 ;; flycheck
 (load "~/.emacs.d/flycheck")
+
+;; srefactor
+(load "~/.emacs.d/srefactor")
+
+(provide 'init)
+;;; init.el ends here
