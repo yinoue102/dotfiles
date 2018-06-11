@@ -31,9 +31,14 @@
 ;; helm
 (load "~/.emacs.d/helm")
 
+
+;;;; coding
+
 ;; cc-mode 
 (load "~/.emacs.d/cc-mode")
 
-;; coding
+;; yasnippet
 (require 'yasnippet)
-(require 'flycheck)
+
+;; flycheck
+(load "~/.emacs.d/flycheck")
