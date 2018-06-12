@@ -25,5 +25,7 @@
 
 ;; manual install
 (el-get-bundle helm)
+(el-get-bundle helm-gtags)
 (el-get-bundle auto-complete)
 ;; (el-get-bundle ac-dabbrev)
+(el-get-bundle tuhdo/semantic-refactor)

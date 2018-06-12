@@ -50,5 +50,8 @@
 ;; srefactor
 (load "~/.emacs.d/srefactor")
 
+;; helm gtags
+(load "~/.emacs.d/helm-gtags-conf")
+
 (provide 'init)
 ;;; init.el ends here

@@ -4,3 +4,8 @@
 .emacs.d/elpa/
 .emacs.d/smex-items
 .emacs.d/recentf
+.emacs.d/semanticdb/
+.emacs.d/srecode-map.el
+.emacs.d/elpa/archives/gnu/archive-contents
+.emacs.d/elpa/archives/gnu/archive-contents.signed
+
