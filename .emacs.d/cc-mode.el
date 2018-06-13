@@ -2,7 +2,6 @@
 ;; ~/.emacs.d/cc-mode.el
 ;;
 
-(require 'cc-mode)
 
 ;;拡張子の対応
 (setq auto-mode-alist
@@ -57,38 +56,6 @@
 ;; auto-complete
 (require 'auto-complete)
 (global-auto-complete-mode t)
-;; Error check
-;; (add-hook 'c-mode-common-hook 'flycheck-mode)
-
-;; Completion
-;;(require 'auto-complete-c-headers)
-;;(add-hook 'c++-mode-hook '(setq ac-sources (append ac-sources '(ac-source-c-headers))))
-;;(add-hook 'c-mode-hook '(setq ac-sources (append ac-sources '(ac-source-c-headers))))
-
-;;(require 'auto-complete-clang-async)
-;;
-;;(defun ac-cc-mode-setup ()
-;;  (setq ac-clang-complete-executable "~/.emacs.d/el-get/repo/clang-complete-async/clang-complete")
-;;  (setq ac-sources (append ac-sources '(ac-source-clang-async)))
-;;  (ac-clang-launch-completion-process))
-;;
-;;(defun my-ac-config ()
-;;  (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
-;;  (add-hook 'auto-complete-mode-hook 'ac-common-setup)
-;;  (global-auto-complete-mode t))
-;;  (my-ac-config)
-
-;; function-args
-;; (require 'function-args)
-;;(fa-config-default)
-;;
-;;(define-key function-args-mode-map (kbd "M-o") nil)
-;;(define-key c-mode-map (kbd "C-M-:") 'moo-complete)
-;;(define-key c++-mode-map (kbd "C-M-:") 'moo-complete)
-;;
-;;(custom-set-faces
-;; '(fa-face-hint ((t (:background "#3f3f3f" :foreground "#ffffff"))))
-;;  '(fa-face-hint-bold ((t (:background "#3f3f3f" :weight bold))))
-;;   '(fa-face-semi ((t (:background "#3f3f3f" :foreground "#ffffff" :weight bold))))
-;;    '(fa-face-type ((t (:inherit (quote font-lock-type-face) :background "#3f3f3f"))))
-;;     '(fa-face-type-bold ((t (:inherit (quote font-lock-type-face) :background "#999999" :bold t)))))
+(setq ac-use-menu-map t)       ;; 補完メニュー表示時にC-n/C-pで補完候補選択
+(provide 'cc-mode)
+;;; cc-mode.el ends here

@@ -1,3 +1,6 @@
 [alias]
   p = !git push origin `git rev-parse --abbrev-ref HEAD`
   
+[user]
+	email = yusuke.inoue@cpc.ait.kyushu-u.ac.jp
+	name = yusuke.inoue
