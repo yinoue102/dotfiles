@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
+(require 'cc-mode)
 ;;拡張子の対応
 (setq auto-mode-alist
       (append
