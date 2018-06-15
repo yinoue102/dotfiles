@@ -1,7 +1,6 @@
-;;
-;; ~/.emacs.d/cc-mode.el
-;;
-
+;;; ~/.emacs.d/cc-mode.el --- Summary
+;;; Commentary:
+;;; Code:
 
 ;;拡張子の対応
 (setq auto-mode-alist
