@@ -118,15 +118,16 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# PATh settings
+# PATH settings
 export HALIDE_ROOT=/home/yinoue/Halide-ATAM/halide
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/yinoue/Halide-ATAM/opencv-3.1.0/build/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/home/yinoue/Halide-ATAM/opencv-3.1.0/build/lib
 export CPATH=${HOME}/Halide-ATAM/opencv-3.1.0/modules/flann/include
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:${PKG_CONFIG_PATH}
 export PATH="/home/yinoue/.cask/bin:$PATH"
 
+# git completion
+source ~/.git-completion.bash
+
 # Prompt Color setting
 PS1="\[\e[36m\][\u@\h \W \d \t]\[\e[0m\]\n\\$ "
 
-# git completion
-source ~/.git-completion.bash
