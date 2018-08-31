@@ -53,5 +53,8 @@
 ;; helm gtags
 (load "~/.emacs.d/helm-gtags-conf")
 
+;; yatex
+(load "~/.emacs.d/yatex")
+
 (provide 'init)
 ;;; init.el ends here

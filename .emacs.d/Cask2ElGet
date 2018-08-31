@@ -29,3 +29,5 @@
 (el-get-bundle auto-complete)
 ;; (el-get-bundle ac-dabbrev)
 (el-get-bundle tuhdo/semantic-refactor)
+(el-get-bundle AndreaCrotti/yasnippet-snippets)
+(el-get-bundle yatex)
