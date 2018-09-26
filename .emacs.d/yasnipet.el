@@ -4,6 +4,8 @@
 ;; yasnipet on
 
 (require 'yasnippet)
+;;;(autoload 'yasnippet "yasnippet")
+
 (setq yas-snippet-dirs
       '("~/.emacs.d/mySnippets" 
         "~/.emacs.d/snippets"

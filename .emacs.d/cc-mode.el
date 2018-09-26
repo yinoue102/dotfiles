@@ -2,7 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'cc-mode)
+;;; (require 'cc-mode)
+(autoload 'cc-mode "cc-mode" nil t)
+
 ;;拡張子の対応
 (setq auto-mode-alist
       (append
@@ -54,8 +56,11 @@
  )
 
 ;; auto-complete
-(require 'auto-complete)
+ (require 'auto-complete)
+;;;(autoload 'auto-complete "auto-complete" nil t)
+;;;(with-eval-after-load 'auto-complete
 (global-auto-complete-mode t)
 (setq ac-use-menu-map t)       ;; 補完メニュー表示時にC-n/C-pで補完候補選択
-(provide 'cc-mode)
+
+(provide 'auto-complete)
 ;;; cc-mode.el ends here
