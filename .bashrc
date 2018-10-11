@@ -119,9 +119,6 @@ if ! shopt -oq posix; then
 fi
 
 # PATH settings
-export HALIDE_ROOT=/home/yinoue/Halide-ATAM/halide
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/home/yinoue/Halide-ATAM/opencv-3.1.0/build/lib
-export CPATH=${HOME}/Halide-ATAM/opencv-3.1.0/modules/flann/include
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:${PKG_CONFIG_PATH}
 export PATH="/home/yinoue/.cask/bin:$PATH"
 
